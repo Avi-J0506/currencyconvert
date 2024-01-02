@@ -1,0 +1,36 @@
+{
+  "name": "cryptobackend",
+  "version": "1.0.0",
+  "description": "backend apis for crypto app",
+  "main": "src/server.js",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "nodemon": "^3.0.2",
+    "swagger-ui-express": "^5.0.0",
+    "winston": "^3.11.0",
+    "yamljs": "^0.3.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshitaSrivast/currencyconvert.git"
+  },
+  "author": "IshitaSrivast",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IshitaSrivast/currencyconvert/issues"
+  },
+  "homepage": "https://github.com/IshitaSrivast/currencyconvert#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nock": "^13.4.0",
+    "supertest": "^6.3.3"
+  }
+}

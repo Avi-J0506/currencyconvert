@@ -1,0 +1,24 @@
+.header {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  height: 3.9vh;
+  padding: 1vh;
+  overflow: hidden;
+
+  text-align: center;
+  display: flex;
+  img {
+    border-radius: 50%;
+    margin-left: 13px;
+  }
+
+  // border-bottom: 20px;
+  //border-color: aliceblue;
+}
+
+// .line {
+//   background-color: gray;
+//   height: 0.1vh;
+//   width: 100%;
+// }

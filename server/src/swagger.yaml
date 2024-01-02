@@ -1,0 +1,44 @@
+swagger: '2.0'
+info:
+  title: Crypto Converter API
+  version: '1.0.0'
+  description: API for converting cryptocurrencies to various fiat currencies.
+host: localhost:5000
+basePath: /api
+schemes:
+  - http
+paths:
+  /supported-currencies:
+    get:
+      summary: Get supported currencies
+      responses:
+        '200':
+          description: Successful response
+  /top-currencies:
+    get:
+      summary: Get top cryptocurrencies
+      responses:
+        '200':
+          description: Successful response
+  /calculate-price:
+    get:
+      summary: Calculate cryptocurrency price
+      parameters:
+        - in: query
+          name: currency
+          type: string
+          required: true
+          description: Cryptocurrency code
+        - in: query
+          name: supported
+          type: string
+          required: true
+          description: Supported currency code
+        - in: query
+          name: amount
+          type: number
+          required: true
+          description: Amount of cryptocurrency
+      responses:
+        '200':
+          description: Successful response
