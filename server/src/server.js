@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const apiRoutes = require("./routes/apiRoutes");
 const swaggerUi = require("swagger-ui-express");
 const YAML = require("yamljs");
+var path = require('path');
 
 // Initialize Express application
 const app = express();
@@ -14,7 +15,7 @@ app.use(cors());
 // HTTP request logging middleware for node.js
 app.use(morgan("tiny")); // 'tiny' gives minimal output
 
-const swaggerDocument = YAML.load("src/swagger.yaml");
+const swaggerDocument =  path.resolve(__dirname,'./swagger.yaml');
 
 const port = 5000;
 
